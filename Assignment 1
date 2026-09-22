@@ -1,0 +1,23 @@
+students = {
+    101: ("Sunny", "CS", 80),
+    102: ("Dolly", "AIML", 90),
+    103: ("Teddy", "DS", 95)
+}
+roll_no=[101,102,103]
+
+students[104] = ("Bobby", "CSE", 75)
+roll_no.append(104)
+
+del students[102]
+roll_no.remove(102)
+
+students[103]=("Teddy", "ENTC", 93)
+
+print("Final Student Records:")
+
+for roll_no,i in students.items():
+    print("Roll Number: ",roll_no)
+    print("Name: ",i[0])
+    print("Branch: ",i[1])
+    print("Marks: ",i[2])
+    print()
